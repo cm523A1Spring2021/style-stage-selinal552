@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
 /*
  * [Modified] Modern CSS Reset
  * @link https://github.com/hankchizljaw/modern-css-reset
@@ -8,7 +12,6 @@
 *::after {
   box-sizing: border-box;
 }
-
 /* Remove default margin */
 body,
 h1,
@@ -43,4 +46,318 @@ body {
   }
 }
 
-// Begin theme styles
+@media only screen and (max-width: 950px) {
+  #main {
+    margin: 20%;
+  }
+
+  h1{
+    max-width: 4ch;
+    text-align: center;
+    margin: auto;
+  }
+
+  nav{
+    position: absolute !important;
+  }
+
+  h2 {
+    line-height: 1;
+  }
+
+  footer.page-footer div {
+    margin: 10%;
+  }
+
+  footer a {
+    width: 100%;
+  }
+}
+
+.skip-link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  color: rgb(12, 0, 0);
+  border-radius: 10%;
+  background-color: rgba(141, 182, 141, 0.795);
+  font-family: "Amatic SC", cursive;
+  font-size: 2.5vh;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 0.3em 0.7em;
+}
+
+header {
+  display: grid;
+  min-height: 100vh;
+  text-align: center;
+  place-items: center;
+  font-family: "Amatic SC", cursive;
+  background: rgb(131, 143, 122);
+  background: radial-gradient(
+    circle,
+    rgba(202, 238, 174, 1) 0%,
+    rgba(242, 138, 138, 1) 100%
+  );
+}
+
+h1 {
+  font-family: "Fascinate", cursive;
+  color: rgb(33, 112, 21);
+  font-size: 5em;
+}
+
+header h2{
+  color:rgb(99, 28, 28);
+  font-weight: bold;
+}
+
+header p{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header a{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+
+a[class="link-github"] {
+  display: inline-block;
+}
+
+svg {
+  margin-top: 2%;
+  margin-right: 5px;
+  height: max(1.1vw, 15px);
+  fill: rgb(126, 189, 118);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  font-family: "Amatic SC", cursive;
+  font-size: 1.3em;
+  list-style-type: none;
+}
+
+ul {
+  font-weight: bold;
+  list-style-type: none;
+}
+
+nav li:hover {
+  background-color: rgb(153, 185, 153);
+}
+
+nav ul > li {
+  background-color: rgba(202, 107, 107, 0.774);
+  border: 0.5px solid white;
+  border-radius: 5px;
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+
+a{
+  color:rgb(51, 82, 41);
+}
+
+#main {
+  font-family: "Cairo", sans-serif;
+  font-size:1.4em;
+}
+
+article#about {
+  display: block;
+  margin-top: 50px;
+}
+
+section > h2 {
+  font-family: "Amatic SC", cursive;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+article {
+  margin-bottom: 2em;
+}
+
+section.container {
+  display: block;
+  margin-top: 100px;
+  max-width: 75ch;
+  margin: auto;
+  font-size: 0.8em;
+  line-height: 2;
+}
+
+blockquote {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: rgba(141, 182, 141, 0.486);
+}
+
+section ul {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  row-gap: 0.5em;
+  column-gap: 1em;
+  border: 1px solid rgba(216, 77, 77, 0.63);
+  padding: 10px;
+  margin: auto;
+  font-family: "Amatic SC", cursive;
+  font-size: 1.3em;
+  color: rgb(91, 117, 91);
+  font-weight: bold;
+  list-style-type: none;
+}
+
+h4 {
+  font-family: "Amatic SC", cursive;
+  font-size: 2.5 em;
+}
+
+h2,
+h3 {
+  font-family: "Amatic SC", cursive;
+  font-size: 2em;
+  color: rgba(196, 44, 52, 0.781);
+}
+
+section.container {
+  margin-bottom: 3rem;
+}
+
+#files h3 {
+  margin-bottom: 0.3em;
+}
+
+a.link-downloadcss {
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: rgb(111, 151, 111);
+  border: 2px solid rgba(201, 117, 117, 0.781);
+  margin: auto;
+  max-width: 10rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(255, 254, 254);
+}
+
+a.link-downloadhtml {
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: rgb(111, 151, 111);
+  border: 2px solid rgba(201, 117, 117, 0.781);
+  margin: auto;
+  max-width: 10rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(255, 254, 254);
+}
+
+a.link-codepen {
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: rgb(111, 151, 111);
+  border: 2px solid rgba(201, 117, 117, 0.781);
+  margin: auto;
+  max-width: 10rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(255, 254, 254);
+}
+
+#files a:hover {
+  background-color: rgba(201, 117, 117, 0.781);
+}
+
+h4#profile-title {
+  font-family: "Amatic SC", cursive;
+  font-size: 2em;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.781);
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+aside.profile div {
+  font-size: 0.8em;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+  padding: 3%;
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F01.img.society6.com%2Fsociety6%2Fimg%2F6DCagBzOAPegFgqQ_2t8iKfr_PU%2Fw_700%2Fartwork%2F~artwork%2Fs6-0068%2Fa%2F27832664_4390339%2F~~%2Fwatermelon-pattern-vw4-prints.jpg&f=1&nofb=1);
+}
+
+aside.profile ul {
+  margin: auto;
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+aside#styles div {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+ul.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 4em;
+  font-size: 0.8em;
+  padding: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
+ul.features li {
+  border-radius: 10px;
+  background-color: rgba(111, 177, 111, 0.623);
+  margin: auto;
+  padding: 50px; 
+}
+
+.link-allstyles{
+  font-size: 1rem;
+}
+
+footer,
+aside {
+  text-align: center;
+  font-family: "Cairo", sans-serif;
+  font-size: 1.3em;
+}
+
+.page-footer {
+  background-color: rgba(201, 117, 117, 0.534);
+  font-family: "Amatic SC", cursive;
+  font-size: 1.2em;
+  font-weight: bold;
+}
